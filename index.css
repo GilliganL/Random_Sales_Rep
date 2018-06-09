@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  background-color: white;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: white;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.winnerdiv {
+  background-color: #00aeef;
+  height: 100vh;
+  padding-top:10%;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.winnerh1 {
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: #00aeef;
+  height: 50px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  text-align: right;
+  width: 100%;
+  bottom: 0;
+}
+
+.error {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: red; 
+}
+
+footer p {
+  margin: 0;
+  padding-top: 15px;
+}
+
+ul {
+ list-style: decimal;
+ margin-left: 50px;
+}
+
+li {
+  height: 25px;
+}
+
+.banner {
+  background-image: url('https://www.macrium.com/files-2/Macrium-Reflect-Header-Image.png');
+  background-size: cover;
+  padding-top: 5px;
+}
+
+img {
+  max-height: 60px;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.pickRep, .repList {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.repList {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: white;
+  color: black;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+.theList {
+  min-height: 100px;
+}
+
+h3, h2, h1 {
+  font-weight: normal;
+}
+
+input {
+  height: 40px;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+button {
+  background: #00aeef;
+  border: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
+  transition: transform .25s ease-out;
+  width: 180px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.generateRep, .closeButton{
+  background: #81bc00;
+}
+
+button:hover {
+    background-color: #0084bd;
+    color: #fff;
+}
+
+.addRep button, .removeRep button, input {
+  margin-top: 10px;
+}
+
+
+.disclaimer {
+  font-size: 14px;
+  margin-left: 50px;
+  color: #f4bb0e;
+  text-align: right;
+
+}
+
+@media only screen and (max-width: 590px) {
+  .repList {
+    text-align: center;
+  }
+
+  .theList {
+    text-align: left;
+  }
+
+  .winnerdiv{
+    padding-top: 25%
+  }
+}

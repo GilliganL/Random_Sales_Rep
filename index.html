@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Randomly select a sales rep">
+    <title>Pick a Sales Rep</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <header role="banner">
+        <img src="https://www.macrium.com/files-2/macrium-logo.svg" alt="Macrium Software Logo">
+      </header>
+   
+        <div class="winnerdiv hidden">
+          <h1 class="winnerh1"></h1>
+          <button class="submit closeButton">Close</button>
+          </div>
+      
+      <main role="main">
+        <div class="banner">
+        <h1>Who gets the next sale?</h1>
+        <section class="pickRep">
+          <h2>Click Choose One to Pick a Sales Rep</h2>
+           <button type="submit" class="generateRep">Choose One</button>
+           <div class="results">
+             <h3 class="winner"></h3>
+            </div>
+            </section>
+        </div>
+        
+      
+        <section class="repList">
+          <div class="row">
+          <div class="theList">
+            <h3 class="listh3">Current Sales Reps:</h3>
+            <ul class="salesReps">
+            </ul>
+          </div>
+          </div>
+          <div class="row">
+          <p class="disclaimer">*Sales reps entered here will not persist. Contact site administrator to permanently add sales reps.</p>
+          </div>
+          <div class="row">
+            <form class="addRep">
+              <p class="error"></p>
+              <label for="repName">Enter New Sales Rep:</label>
+              <input type="text" placeholder="Kim Jong Un" id="repName" class="repName" required>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="row">
+            <form class="removeRep">
+              <label for="toRemove">Sales Rep ID to Remove:</label>
+              <input type="text" placeholder="1" class="toRemove" id="toRemove" required>
+              <button type="submit">Delete</button>
+            </form>
+          </div>
+        </section>
+        </div>
+      </main>
+      <footer>
+        <p>Created by Lynsey</p>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
